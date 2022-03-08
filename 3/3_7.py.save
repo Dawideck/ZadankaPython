@@ -1,0 +1,30 @@
+#za pomoca for znajdz najwieksza i najmniejsza liczbe ze zbioru n wylosowanych liczb calkowitych 
+#generowanych losow, w przedziale od 0 do 100, w przedziale <0;100> (n=5)
+#oraz oblicz wartosc srednia ze wszystkich wylosowanych liczb
+
+import random
+
+liczba = []
+n = int(input("podaj ilosc liczb: "))
+
+max = 0
+min = random.randint(0,100)
+max = min
+
+i = 0
+y = 0
+
+for i in range(0, n-1):
+	print("i: ", +i)
+	liczba.append(random.randint(0, 100))
+	print(liczba)
+
+for y in range(0, n-1):
+	print("y: ", +y)
+	if max < liczba[y]:
+		max = liczba[if min > liczba[y]:
+		min = liczba[y]
+
+
+print("min", +min)
+print("max", +max)
